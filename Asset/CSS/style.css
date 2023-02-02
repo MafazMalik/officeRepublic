@@ -1,0 +1,1026 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+
+.logoImg {
+    height: 55px;
+}
+
+.dropdown-item {
+    transition: 0.7s;
+    padding: 5px;
+    color: #575757;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dropdown-item:hover {
+    background-color: #e1e1e3;
+    color: #2c4e85 !important;
+}
+
+.dropdown1 {
+    position: relative;
+}
+
+.dropdown1:hover .dropdown-menu1 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(15px);
+    display: block;
+}
+
+.dropdown-menu1 {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding: 20px;
+    top: 100%;
+    transform: translateY(50px);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
+    z-index: 111;
+    transition: 0.4s all;
+}
+
+.locationDrop {
+    width: 350px;
+}
+
+.txt-drop:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0%;
+}
+
+.txt-drop:hover:after {
+    width: 100% !important;
+    left: 0;
+}
+
+.rqstVisitBtn {
+    background-color: #ef6927;
+}
+
+.dropdown-menu1 a:hover {
+    color: white;
+}
+
+.rqstVisitBtn:hover,
+.navbar:hover .rqstVisitBtn {
+    background-color: #ef6927;
+    color: white !important;
+}
+
+/* modal */
+
+.alignment {
+    /* margin-top: 8% !important; */
+}
+
+/* Heading */
+.smallLine {
+    height: 10px;
+    width: 70px;
+    background-color: #222f65;
+}
+
+.heading {
+    font-weight: 900 !important;
+    color: #404040 !important;
+}
+
+.heading-content {
+    /* text-align: justify; */
+    font-size: small;
+}
+
+/* Carousel */
+
+.carousel-item {
+    min-height: 50vh;
+}
+
+.carousel-controls {
+    position: absolute;
+    left: 50%;
+    /* bottom: 40px; */
+    top: 105%;
+    z-index: 6;
+    transform: translateX(-50%);
+}
+
+.carousel-indicators {
+    position: relative;
+    margin: 0;
+}
+
+.imageCarousel {
+    height: 70px !important;
+    width: 70px !important;
+    margin: 0 5px !important;
+    /* border-radius: 50%; */
+    background-position: center;
+    background-size: cover;
+    border: 1px solid transparent !important;
+    transition: all 0.3s ease;
+}
+
+.imageCarousel:active,
+.imageCarousel:focus {
+    border-color: #ffffff !important;
+    transform: scale(1.2);
+}
+
+.Previous,
+.Next {
+    height: 60px;
+    width: 60px;
+    background-color: #2c4e85;
+    opacity: 1;
+    z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.Previous {
+    left: -70px;
+}
+
+.Next {
+    right: -70px;
+}
+
+/* Growing Section */
+
+.growingSection {
+    background: linear-gradient(0deg, rgba(216, 179, 163, 0.747), rgba(216, 179, 163, 0.747)), url('../Images/img-6.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.growingSection img {
+    filter: brightness(60%);
+}
+
+.img-btn {
+    width: 90% !important;
+    font-size: small;
+}
+
+.img-btn:hover {
+    background-color: white;
+    color: #222f65 !important;
+}
+
+.parentIMG:hover .childIMG {
+    position: absolute;
+    bottom: 10%;
+    display: block !important;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+.childrenIMG {
+    top: 50%;
+    transition: 1s;
+}
+
+.parentIMG:hover .childrenIMG {
+    top: 10% !important;
+}
+
+.parentIMG img,
+.hoverImg img {
+    transition: 2s;
+}
+
+.hoverImg {
+    overflow: hidden;
+}
+
+.parentIMG:hover img,
+.hoverImg:hover img {
+    transform: scale(1.2);
+}
+
+@keyframes example {
+    from {
+        bottom: -50px;
+    }
+
+    to {
+        bottom: 10%;
+    }
+}
+
+/* Why Us Section */
+
+.whyUs {
+    background-color: #e9e9e9;
+}
+
+.cardFontImg {
+    background: -webkit-linear-gradient(#8470a8, #c1268c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cardFontImg p,
+.address {
+    text-align: justify !important;
+}
+
+.whyUsCard {
+    background-color: #ededed !important;
+}
+
+/* Our Offering */
+
+.ourOffering {
+    background: linear-gradient(0deg, rgba(247, 247, 247, 0.747), rgba(247, 247, 247, 0.747)), url('../Images/img-13.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.offeringText {
+    color: #ED3050;
+}
+
+.carouselImgDiv {
+    width: 180px !important;
+    height: auto !important;
+    margin: 15px;
+    border-radius: 5% !important;
+    overflow: hidden;
+    border-bottom: 20px solid #222f65;
+}
+
+.carouselImgDiv1 {
+    /* width: 250px !important;
+    height: auto !important;
+    margin-left: 10px;
+    margin-right: 10px; */
+    border-radius: 5% !important;
+    overflow: hidden;
+    border-bottom: 20px solid #222f65;
+}
+
+.knowMoreBtn {
+    font-size: small !important;
+}
+
+.moreBtn {
+    font-size: 10px;
+    border: 1px solid #222f65;
+    color: #222f65;
+}
+
+.arrowsOffering {
+    color: #222f65 !important;
+}
+
+.arrowsOfferingPar {
+    margin: -5px;
+}
+
+.alignCard {
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.whyUsCard:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.ourOfferingSlider .carouselImgDiv1 {
+    max-width: 100% !important;
+}
+
+.swiperContainer {
+    padding: 0 15px !important;
+    max-width: 1230px !important;
+    margin: 0 auto !important;
+}
+
+.Offering {
+    padding: 50px 0 !important;
+}
+
+/* Social Media Carousel */
+
+.fontIcon {
+    color: #f28752;
+}
+
+.fontIconName {
+    font-size: large;
+}
+
+.iconAfterBerfore {
+    color: #ef6927;
+    font-size: xx-large;
+}
+
+.fontclr1 {
+    color: #222F64;
+}
+
+.fontclr2 {
+    color: #EF6A27;
+}
+
+.fontclr3 {
+    color: #ED3050;
+}
+
+.fontclr4 {
+    color: #137EC2;
+}
+
+.fontclr5 {
+    color: #F4BA35;
+}
+
+.fontclr6 {
+    color: #222F64;
+}
+
+.fontclr7 {
+    color: #EF6A27;
+}
+
+.fontclr8 {
+    color: #ED3050;
+}
+
+/* Client List */
+
+.img_box img {
+    max-width: 100%;
+}
+
+.slider_container .container {
+    padding: 0 15px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.card_slider {
+    padding: 50px 0;
+}
+
+.swiper-wrapper {
+    transition-timing-function: linear !important;
+    -webkit-transition-timing-function: linear !important;
+    -moz-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    display: flex;
+    /*gap: 1rem;*/
+    align-items: center;
+
+
+}
+
+/* Footer */
+
+footer {
+    background-color: #ededed;
+}
+
+
+.textHoverEffect {
+    transition: 0.3s;
+}
+
+
+.textHoverEffect:hover {
+    transform: scale(1.2);
+}
+
+.footLink {
+    transition: 0.5s;
+}
+
+.footLink:hover {
+    font-size: 18px;
+}
+
+.fb {
+    color: #395693;
+}
+
+.twitter {
+    color: #2468ad;
+}
+
+.insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.linkedin {
+    color: #21567e;
+}
+
+/* Modal */
+
+.modalHead {
+    margin-left: 30%;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 992px) {
+
+    .empty-color {
+        background-color: #222f65;
+        height: 520px !important;
+        width: 380px;
+        right: 0;
+        border-radius: 60px 0 0 60px;
+        top: 0;
+    }
+
+    .overflowImage {
+        position: relative;
+        z-index: 3;
+        width: 85%;
+        margin-left: 10%;
+    }
+
+    .mainSection {
+        margin-top: 120px;
+        height: 400px;
+    }
+
+    .logoImg {
+        height: 55px;
+    }
+
+    .text-lg-white {
+        color: white !important;
+    }
+
+    /* .carousel-control-next {
+        display: none;
+    } */
+
+    .dropdown-menu1 {
+        left: -40%;
+    }
+
+    .carouselImgDiv {
+        width: 330px !important;
+        height: auto !important;
+    }
+
+    /* .carouselImgDiv1 {
+        width: 380px !important;
+        height: auto;
+    } */
+
+    .negativeMargin {
+        margin-left: -50px;
+        margin-right: -50px;
+        margin-top: -180px !important;
+    }
+
+    .fontIcon {
+        font-size: 50px;
+    }
+
+    .fontIconName {
+        font-size: 16px;
+    }
+
+    .centerCard {
+        font-size: 20px !important;
+    }
+
+    .sideCard {
+        font-size: 15px !important;
+    }
+
+    .locationDrop {
+        margin-left: -100%;
+        width: 350px;
+    }
+
+    .whyUsCard {
+        height: 470px;
+    }
+
+}
+
+@media only screen and (min-width: 1120px) {
+
+    .empty-color {
+        width: 450px;
+    }
+
+    .logoImg {
+        height: 70px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* .whyUsCard {
+        width: 238px;
+    } */
+
+    .negativeMargin {
+        margin-left: -50px;
+        margin-right: -50px;
+        margin-top: -100px;
+    }
+
+    .twoImg {
+        height: 185px !important;
+    }
+
+    .potraitImg {
+        height: 395px !important;
+    }
+
+}
+
+@media only screen and (min-width:992px) {
+    .whyUsCard {
+        height: 320px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .mainSection {
+        height: 480px;
+    }
+
+    .empty-color {
+        height: 600px !important;
+    }
+}
+
+@media only screen and (min-width:1300px) {
+    /* .carousel-control-next {
+        display: block;
+    } */
+
+    .negativeMargin {
+        margin-left: -100px;
+        margin-right: -100px;
+        margin-top: -150px !important;
+    }
+
+    .alignImg {
+        height: 185px !important;
+    }
+
+    .whyUsCard {
+        height: 450px;
+    }
+
+
+
+}
+
+@media only screen and (min-width:1400px) {
+    .empty-color {
+        height: 670px !important;
+        width: 470px;
+    }
+
+    .mainSection {
+        height: 550px;
+    }
+}
+
+@media only screen and (min-width:1440px) {
+
+    .negativeMargin {
+        margin-left: -100px;
+        margin-right: -100px;
+        margin-top: -250px !important;
+    }
+
+    .dummyNumberRequest {
+        margin-left: 15%;
+    }
+}
+
+@media only screen and (min-width:1481px) {
+    .empty-color {
+        height: 670px !important;
+        width: 600px;
+    }
+
+    .mainSection {
+        height: 550px;
+    }
+
+    .heading {
+        font-size: 50px;
+    }
+
+    .heading-content {
+        font-size: large;
+    }
+
+    .dummyNumberRequest {
+        margin-left: 30%;
+    }
+
+}
+
+@media only screen and (min-width:1600px) {
+    .empty-color {
+        height: 770px !important;
+    }
+
+    .mainSection {
+        height: 650px;
+    }
+}
+
+@media only screen and (min-width:1750px) {
+    .dummyNumberRequest {
+        margin-left: 40%;
+    }
+
+    .topRight {
+        padding-left: 10%;
+    }
+}
+
+@media only screen and (min-width:1701px) {
+
+    .fa-arrow-left,
+    .fa-arrow-right {
+        font-size: 50px;
+        font-weight: 900;
+    }
+
+    .empty-color {
+        height: 870px !important;
+        width: 700px;
+    }
+
+    .mainSection {
+        height: 750px;
+    }
+
+    .swiper-button-next {
+        position: absolute;
+        right: 10% !important;
+    }
+
+    .swiper-button-prev {
+        position: absolute;
+        left: 10% !important;
+    }
+}
+
+@media only screen and (min-width:2001px) {
+    .empty-color {
+        height: 970px !important;
+        width: 800px;
+    }
+
+    .mainSection {
+        height: 850px;
+    }
+
+    .swiper-button-next {
+        position: absolute;
+        right: 15% !important;
+    }
+
+    .swiper-button-prev {
+        position: absolute;
+        left: 15% !important;
+    }
+
+    .heading {
+        font-size: 70px;
+    }
+
+    .heading-content {
+        font-size: x-large;
+    }
+}
+
+@media only screen and (min-width:2301px) {
+    .empty-color {
+        height: 1070px !important;
+        width: 950px;
+    }
+
+    .mainSection {
+        height: 950px;
+    }
+
+    .swiper-button-next {
+        position: absolute;
+        right: 20% !important;
+    }
+
+    .swiper-button-prev {
+        position: absolute;
+        left: 20% !important;
+    }
+
+    .dummyNumberRequest {
+        margin-left: 50%;
+    }
+}
+
+@media only screen and (max-width:2600px) {
+    .imageCarousel {
+        height: 130px !important;
+        width: 130px !important;
+    }
+
+
+    .Previous,
+    .Next {
+        height: 120px;
+        width: 120px;
+    }
+
+    .Previous {
+        left: -120px;
+    }
+
+    .Next {
+        right: -120px;
+    }
+}
+
+@media only screen and (max-width:2000px) {
+    .imageCarousel {
+        height: 100px !important;
+        width: 100px !important;
+    }
+
+
+    .Previous,
+    .Next {
+        height: 90px;
+        width: 90px;
+    }
+
+    .Previous {
+        left: -100px;
+    }
+
+    .Next {
+        right: -100px;
+    }
+}
+
+@media only screen and (max-width:1700px) {
+    .imageCarousel {
+        height: 80px !important;
+        width: 80px !important;
+    }
+
+
+    .Previous,
+    .Next {
+        height: 70px;
+        width: 70px;
+    }
+
+    .Previous {
+        left: -85px;
+    }
+
+    .Next {
+        right: -85px;
+    }
+
+    .swiper-button-next {
+        position: absolute;
+        right: 30px !important;
+    }
+
+    .swiper-button-prev {
+        position: absolute;
+        left: 30px !important;
+    }
+}
+
+@media only screen and (max-width:1440px) {
+    .imageCarousel {
+        height: 70px !important;
+        width: 70px !important;
+    }
+
+
+    .Previous,
+    .Next {
+        height: 60px;
+        width: 60px;
+    }
+
+    .Previous {
+        left: -70px;
+    }
+
+    .Next {
+        right: -70px;
+    }
+}
+
+@media only screen and (max-width:1199px) {
+
+    .imageCarousel {
+        height: 50px !important;
+        width: 50px !important;
+    }
+
+    .Previous,
+    .Next {
+        height: 40px;
+        width: 40px;
+    }
+
+    .Previous {
+        left: -50px;
+    }
+
+    .Next {
+        right: -50px;
+    }
+
+    .alignImg {
+        height: 185px !important;
+    }
+}
+
+@media only screen and (max-width:991px) {
+
+    .alignImg {
+        height: 200px !important;
+    }
+
+
+    .imageCarousel {
+        height: 70px !important;
+        width: 70px !important;
+        margin: 0 5px !important;
+        /* border-radius: 50%; */
+        background-position: center;
+        background-size: cover;
+        border: 1px solid transparent !important;
+        transition: all 0.3s ease;
+    }
+
+    .Previous,
+    .Next {
+        height: 60px;
+        width: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+    }
+
+    .Previous {
+        left: -70px;
+    }
+
+    .Next {
+        right: -70px;
+    }
+
+    .whyUsCard {
+        height: 350px;
+    }
+
+    .growingSection {
+        margin-top: 100px;
+    }
+
+    .mainSection {
+        margin-top: 120px;
+    }
+
+}
+
+@media only screen and (max-width:767px) {
+    /* .carouselImgDiv1 {
+        width: 90% !important;
+        height: 75% !important;
+    } */
+
+    .whyUsCard {
+        height: auto;
+    }
+
+    .fontIcon {
+        font-size: 50px;
+    }
+
+    .fontIconName {
+        font-size: 16px;
+    }
+
+    .alignImg {
+        height: 380px !important;
+    }
+
+    .alignImg1 {
+        height: 400px !important;
+        width: 425px;
+        left: -40%;
+    }
+
+    .growingSection {
+        margin-top: 30px;
+    }
+
+    .footerAlign {
+        text-align: center;
+    }
+
+    .footerSocial {
+        margin-left: 30%;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+
+    .negativeMargin {
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-top: -130px !important;
+    }
+
+    .iconAfterBerfore {
+        font-size: larger;
+    }
+
+    .footerSocial {
+        margin-left: 25%;
+    }
+
+}
+
+@media only screen and (max-width:320px) {
+
+    .alignImg1 {
+        height: 320px !important;
+        left: -40%;
+    }
+
+    .potraitImg {
+        width: 315px !important;
+    }
+
+    .footerSocial {
+        margin-left: 20%;
+    }
+
+}
+
+@media only screen and (max-width:420px) {
+
+    .dropdown-menu1 {
+        width: 250px;
+    }
+
+    .modalHead {
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width:375px) {
+
+    .alignImg1 {
+        height: 350px !important;
+        width: 375px !important;
+        left: -40%;
+    }
+
+}
